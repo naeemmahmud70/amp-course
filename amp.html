@@ -1,0 +1,394 @@
+<html ⚡ lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>AMP Feaures</title>
+    <link rel="canonical" href="./regular-html-version.html" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Article headline",
+        "image": ["thumbnail1.jpg"],
+        "datePublished": "2015-02-05T08:00:00+08:00"
+      }
+    </script>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+      }
+      @-webkit-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-moz-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-ms-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @-o-keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+      @keyframes -amp-start {
+        from {
+          visibility: hidden;
+        }
+        to {
+          visibility: visible;
+        }
+      }
+    </style>
+    <noscript
+      ><style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          -moz-animation: none;
+          -ms-animation: none;
+          animation: none;
+        }
+      </style></noscript
+    >
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <!-- Extended Components Scripts of AMP Begining Course -->
+    <script
+      async
+      custom-element="amp-youtube"
+      src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-carousel"
+      src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-social-share"
+      src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-ad"
+      src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"
+    ></script>
+    <!-- Extended Components Scripts of AMP Intermediate Course -->
+    <script
+      async
+      custom-element="amp-sidebar"
+      src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-accordion"
+      src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-form"
+      src="https://cdn.ampproject.org/v0/amp-form-0.1.js"
+    ></script>
+    <script
+      async
+      custom-template="amp-mustache"
+      src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-selector"
+      src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"
+    ></script>
+    <script
+      async
+      custom-element="amp-lightbox"
+      src="https://cdn.ampproject.org/v0/amp-lightbox-0.1.js"
+    ></script>
+    <!-- Adding styles to the elements -->
+    <style amp-custom>
+      h1 {
+        font-size: xx-large;
+        font-weight: bolder;
+        color: gray;
+        text-align: center;
+      }
+      div {
+        margin: 10px;
+      }
+      h3 {
+        font-size: large;
+        font-weight: bold;
+        color: gray;
+      }
+      .social-bar {
+        text-align: center;
+        align-items: center;
+      }
+      .headerbar {
+        display: flex;
+      }
+      .hamburger {
+        padding-left: 10px;
+      }
+      .sidebar {
+        padding: 10px;
+        margin: 0;
+      }
+      .sidebar > li {
+        list-style: none;
+        margin-bottom: 10px;
+      }
+      .sidebar a {
+        text-decoration: none;
+      }
+      .close-sidebar {
+        font-size: 1.5em;
+        padding-left: 5px;
+      }
+      .carousel-preview {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- AMP Begining Course -->
+    <h1>AMP Begining Course</h1>
+    <div>
+      <h3>APM Image</h3>
+      <amp-img
+        src="https://images.unsplash.com/photo-1659777067579-14205de45cb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        height="480"
+        width="640"
+        layout="responsive"
+      >
+      </amp-img>
+    </div>
+    <div>
+      <h3>AMP Extended Video</h3>
+      <amp-youtube
+        data-videoid="vOdW8JsmB5c"
+        layout="responsive"
+        width="480"
+        height="270"
+      >
+        <div fallback>
+          <p>The youtubr video could not be loaded.</p>
+        </div>
+      </amp-youtube>
+    </div>
+    <div>
+      <h3>AMP Carousel</h3>
+      <amp-carousel
+        width="450"
+        height="300"
+        layout="responsive"
+        type="slides"
+        role="region"
+        aria-label="Basic carousel"
+        delay="2000"
+        autoplay
+        loop
+      >
+        <amp-img
+          src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          width="450"
+          height="300"
+          layout="responsive"
+        ></amp-img>
+        <amp-img
+          src="https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80"
+          width="450"
+          height="300"
+          layout="responsive"
+        ></amp-img>
+        <amp-img
+          src="https://images.unsplash.com/photo-1555532538-dcdbd01d373d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80"
+          width="450"
+          height="300"
+          layout="responsive"
+        ></amp-img>
+      </amp-carousel>
+    </div>
+    <h3>AMP Socail Bar</h3>
+
+    <div class="social-bar">
+      <amp-social-share
+        type="email"
+        width="60"
+        height="44"
+        data-param-text="Hello world"
+        data-param-url="https://email.com/"
+        aria-label="Share on Email"
+      ></amp-social-share>
+      <amp-social-share
+        type="twitter"
+        width="60"
+        height="44"
+        data-param-text="Hello world"
+        data-param-url="https://twitter.com/"
+        aria-label="Share on Twitter"
+      >
+      </amp-social-share>
+      <amp-social-share
+        type="linkedin"
+        width="60"
+        height="44"
+        data-param-text="Hello world"
+        data-param-url="https://linkedin.com/"
+        aria-label="Share on LinkedIn"
+      >
+      </amp-social-share>
+    </div>
+    <!-- <h1>AMP Intermediate Course</h1> -->
+    <h1>AMP Intermediate Course</h1>
+    <h3>AMP Sidebar and sub menu with accordion</h3>
+    <div>
+      <header class="headerbar">
+        <div
+          role="button"
+          on="tap:sidebar1.toggle"
+          tabindex="0"
+          class="hamburger"
+        >
+          ☰
+        </div>
+        <div class="site-name">AMP Site</div>
+      </header>
+      <div>
+        <amp-sidebar id="sidebar1" layout="nodisplay" side="left">
+          <div
+            role="button"
+            aria-label="close sidebar"
+            on="tap:sidebar1.toggle"
+            tabindex="0"
+            class="close-sidebar"
+          >
+            ✕
+          </div>
+          <ul class="sidebar">
+            <li><a href="#">Example 1</a></li>
+            <li><a href="#">Example 2</a></li>
+            <amp-accordion id="my-accordion" disable-session-states>
+              <section>
+                <h2>Sub menu</h2>
+                <p>Content in section 1.</p>
+              </section>
+            </amp-accordion>
+          </ul>
+        </amp-sidebar>
+      </div>
+    </div>
+    <h3>AMP form</h3>
+    <div>
+      <form
+        method="post"
+        action-xhr="https://example.com/subscribe"
+        target="_top"
+      >
+        <fieldset>
+          <label>
+            <span>Name:</span>
+            <input type="text" name="name" required />
+          </label>
+          <br />
+          <label>
+            <span>Email:</span>
+            <input type="email" name="email" required />
+          </label>
+          <br />
+          <input type="submit" value="Subscribe" />
+        </fieldset>
+        <div submit-success>
+          <template type="amp-mustache"> Subscription successful! </template>
+        </div>
+        <div submit-error>
+          <template type="amp-mustache"> <p>Subscription failed!</p> </template>
+        </div>
+      </form>
+    </div>
+    <h3>Advaance Carousel</h3>
+    <div>
+      <amp-carousel
+        id="carousel-with-preview"
+        width="450"
+        height="300"
+        layout="responsive"
+        type="slides"
+        role="region"
+        aria-label="Carousel with slide previews"
+        lightbox
+      >
+        <amp-img
+          src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          width="450"
+          height="300"
+          layout="responsive"
+          alt="apples"
+        ></amp-img>
+        <amp-img
+          src="https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80"
+          width="450"
+          height="300"
+          layout="responsive"
+          alt="lemons"
+        ></amp-img>
+        <amp-img
+          src="https://images.unsplash.com/photo-1555532538-dcdbd01d373d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80"
+          width="450"
+          height="300"
+          layout="responsive"
+          alt="blueberries"
+        ></amp-img>
+      </amp-carousel>
+      <div class="carousel-preview">
+        <button on="tap:carousel-with-preview.goToSlide(index=0)">
+          <amp-img
+            src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+            width="60"
+            height="40"
+            alt="apples"
+          ></amp-img>
+        </button>
+        <button on="tap:carousel-with-preview.goToSlide(index=1)">
+          <amp-img
+            src="https://images.unsplash.com/photo-1529236183275-4fdcf2bc987e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1167&q=80"
+            width="60"
+            height="40"
+            alt="lemons"
+          ></amp-img>
+        </button>
+        <button on="tap:carousel-with-preview.goToSlide(index=2)">
+          <amp-img
+            src="https://images.unsplash.com/photo-1555532538-dcdbd01d373d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=964&q=80"
+            width="60"
+            height="40"
+            alt="blueberries"
+          ></amp-img>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
